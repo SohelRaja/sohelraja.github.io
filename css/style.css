@@ -431,7 +431,7 @@ header.navcolor {
 		z-index: 1;
 		background: #052349;
 		text-align: center;
-		transition:all .5s ease-out;
+		transition:all .5s ease-in;
     }
     .sidebar.active{
 		right: 0px;
