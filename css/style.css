@@ -318,11 +318,11 @@ header.navcolor {
 	/*Menu-Toggler....START*/
 	.menu-toggle{
 		display: block;
-		width: 50px;
-        height: 0px;
-        position: absolute;
-        top:30%;
-        right: 6%;
+		width: 35px;
+                height: 40px;
+		position: absolute;
+		top:25%;
+		right: 6%;
 		margin-right: 5%;
 		outline: none;
 		background: none;
@@ -334,13 +334,14 @@ header.navcolor {
 	.menu-toggle span{
 		display: block;
 		position: absolute;
-		top: 32%;
+		top: 20%;
 		margin: 10px 0;
 		right: 0;
 		width: 23px;
 		height: 3px;
 		background: #fff;
 		transition: .6s;
+		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
 	}
 	.menu-toggle span:before{
 		content: '';
@@ -351,6 +352,7 @@ header.navcolor {
 		height: 3px;
 		background: #fff;
 		transition: .6s;
+		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
 	}
 	.menu-toggle span:after{
 		content: '';
@@ -361,9 +363,11 @@ header.navcolor {
 		height: 3px;
 		background: #fff;
 		transition: .6s;
+		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
 	}
 	.menu-toggle.active span{
 		background: transparent;
+		box-shadow: none;
 	}
 	.menu-toggle.active span:before{
 		top: 0;
@@ -386,8 +390,8 @@ header.navcolor {
     }
     .sidebar .nav-social ul{
         margin: 0;
-		padding: 0;
-		text-align: center;
+	padding: 0;
+	text-align: center;
     }
     .sidebar .nav-social ul li{
         list-style: none;
@@ -406,7 +410,7 @@ header.navcolor {
         color: #fff;
     }
     .sidebar .nav-social.active {
-		display: inline-block;
+	display: inline-block;
 	} 
     /*Sidebar.....Start*/
     .sidebar .side-block {
@@ -450,7 +454,7 @@ header.navcolor {
         transform: scale(1);
     }
     .sidebar .side-block ul .side-block-item .nav-link:hover{
-        color:  rgb(154, 164, 175);
+        color:  #7be7eb;
         transform: scale(1.2);
     }
     .sidebar .side-block ul .side-block-item .nav-link::after{
@@ -458,7 +462,7 @@ header.navcolor {
         position: absolute;
         width: 30%;
         height: 2px;
-        background: rgb(154, 164, 175);
+        background: #7be7eb;
         left: 35%;
         bottom: 5px;
         transform: scale(0);
