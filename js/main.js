@@ -1,5 +1,5 @@
 /*...............................Menu Toggle..................................*/
-var myToggle = document.querySelector("#menu-toggle");
+var myToggle = document.querySelector(".menu-toggle");
 var mySidebar = document.querySelector(".sidebar");
 var blurSection = document.querySelector("#blurSection");
 var social = document.querySelector(".nav-social");
