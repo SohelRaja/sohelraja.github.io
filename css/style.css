@@ -567,26 +567,31 @@ header.navcolor {
     text-shadow: 0 0 10px #222222;
 }
 .home #heading-img{
-    width:200px;
-    height:200px;
+    width:190px;
+    height:190px;
     border-radius:50%;
-    border:3px solid #dffffd;
-    box-shadow: 0 0 1px #fff;
-    margin-bottom: 8px;
+    border:3px solid #fff;
+    box-shadow: 0 0 25px #fff;
+    margin-bottom: 10px;
     opacity:1;
     transition: all 0.7s;
     transform: scale(1);
 }
-.home #heading-img:hover{
+/*.home #heading-img:hover{
     box-shadow: 0 0 25px #fff;
     transform: scale(1.1);
+}*/
+.home #heading-text{
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 5px #fff;
 }
 /*...Parallax Setup...*/
 .parallax1{
     /*background: url('../images/home-bg2.jpg');*/
     background: rgb(35,96,186);
     background: radial-gradient(circle, rgba(35,96,186,1) 0%, rgba(29,98,195,1) 34%, rgba(7,23,45,1) 69%, rgba(1,8,17,1) 100%);
-    min-height: 115%;
+    min-height: 100%;
+    max-height: auto;
     position: relative;
     opacity: 1;
     overflow: hidden;
@@ -666,16 +671,37 @@ header.navcolor {
 #Skills{
     overflow: auto;
     padding: 74px 0px;
-    color: #fff;
     position: relative;
-    background: url('../images/skills-bg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
+    color: #fff;
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
-
+#skills-progress-bar{
+	background: url('../images/skills-bg.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 40px;
+}
+#skills-progress-bar .col-6 {
+    text-align: center;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #ffffff;
+}
+button.mfp-close, button.mfp-arrow {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    padding: 0;
+    z-index: 1046;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 60px;
+}
 /*..................................cretificates Section.............................*/
 #Certificates{
     overflow: auto;

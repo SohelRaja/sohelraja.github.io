@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
     <link rel="stylesheet" href="css/libs/venobox.css">
     <link rel="stylesheet" href="css/libs/progresscircle.css">
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="setTimeout(preloader,2000)">
@@ -83,9 +84,9 @@
             <div class="parallax1" id="particles-js">
                 <div class="home">
                     <img class=""src="images/srm.jpeg" alt="" id="heading-img">
-                    <h2 class="wow fadeInLeft" data-wow-delay="0.2s">Hey There,</h2>
-                    <h5 class="wow fadeInRight" data-wow-delay="0.2s">Welcome to My Portfolio Website.</h5>
-                    <h5 class="wow fadeInUp" data-wow-delay="0.4s">I'm Sohel</h5>
+                    <!--<h2 class="wow fadeInLeft" data-wow-delay="0.2s">Hey There,</h2>-->
+                    <!--<h5 class="wow fadeInRight" data-wow-delay="0.2s">Welcome to My Portfolio Website.</h5>-->
+                    <h4 class="wow fadeInUp" data-wow-delay="0.4s" id="heading-text">I'm Sohel</h4>
                 </div>
             </div>
         </section>
@@ -124,7 +125,7 @@
             </div>
         </section>
         <!---------------------------Skills Section----------------------------->
-        <section id="Skills">
+        <!--<section id="Skills">
             <div class="container scrolling">
                 <h2 class="text-center wow jackInTheBox my-title" data-wow-delay="0.2s">Skills</h2><hr class="style-one"><br>
                 <div class="skill-bar row">
@@ -142,6 +143,31 @@
                     <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6 wow fadeInLeft" data-wow-delay="1.5s" data-percentage="75">Bootstrap4</div>
                     <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6 wow fadeInLeft" data-wow-delay="1.6s" data-percentage="55">Sematic-ui</div>
                     <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6 wow fadeInLeft" data-wow-delay="1.7s" data-percentage="20">Arduino</div>
+                </div>
+            </div>
+        </section>-->
+        <section id="Skills">
+            <div class="container scrolling">
+                <h2 class="text-center wow jackInTheBox my-title" data-wow-delay="0.2s">Skills</h2><hr class="style-one"><br>
+                <div><a  class="skills-popup" href="#skills-progress-bar">Click Here</a></div>
+                <div id="skills-progress-bar" class="mfp-hide">
+                    <h2 class="text-center my-title" style="color: #fff; padding:20px 0 0 0;">Skills</h2><hr class="style-one"><br>
+                    <div class="skill-bar row">
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="75">Python</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="90">HTML5</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="75">C</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="60">JavaScript</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="70">PHP</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="70">NodeJS</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="60">MongoDB</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="65">MySQL</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="70">ExpressJS</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="55">jQuery</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="70">CSS3</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="75">Bootstrap4</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="55">Sematic-ui</div>
+                        <div class="circlechart col-lg-2 col-md-3 col-sm-4 col-6" data-percentage="20">Arduino</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,6 +280,7 @@
     <script src="js/libs/venobox.min.js"></script>
     <script src="js/libs/progresscircle.js"></script>
     <script src="js/libs/scrollwatch.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
