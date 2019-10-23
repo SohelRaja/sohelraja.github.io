@@ -493,6 +493,10 @@ header.navcolor {
     .sidebar{
         width: 280px;
     }
+    #skills-progress-bar{
+        margin: 30px;
+        border: 10px solid #fff;
+    }
 }
 @media(max-width:390px){
     .logo{
@@ -681,6 +685,7 @@ header.navcolor {
     background-size: cover;
     background-attachment: fixed;
     margin: 40px;
+    border: 10px solid #fff;
 }
 #skills-progress-bar .col-6 {
     text-align: center;
