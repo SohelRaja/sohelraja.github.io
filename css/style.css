@@ -318,12 +318,12 @@ header.navcolor {
 	/*Menu-Toggler....START*/
 	.menu-toggle{
 		display: block;
-		width: 35px;
-                height: 40px;
+		width: 55px;
+        height: 40px;
 		position: absolute;
 		top:25%;
 		right: 6%;
-		margin-right: 5%;
+		margin-right: 0%;
 		outline: none;
 		background: none;
 		border:none;
@@ -335,12 +335,12 @@ header.navcolor {
 		display: block;
 		position: absolute;
 		top: 20%;
-		margin: 10px 0;
+		margin: 10px 20px 10px 20px;
 		right: 0;
 		width: 23px;
 		height: 3px;
 		background: #fff;
-		transition: .6s;
+		transition: .5s;
 		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
 	}
 	.menu-toggle span:before{
@@ -359,7 +359,7 @@ header.navcolor {
 		position: absolute;
 		top: 10px;
 		left: 0;
-		width: 18px;
+		width: 30px;
 		height: 3px;
 		background: #fff;
 		transition: .6s;
