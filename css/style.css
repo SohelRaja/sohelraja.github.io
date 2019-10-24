@@ -153,7 +153,7 @@ section::-webkit-scrollbar{
     }
 }
 
-/*-------------------------------NavBar--------------------------------*/
+/*-------------------------------NavBar-------------------------------------------------------------------------*/
 header{
 	position: fixed;
 	width: 100%;
@@ -241,7 +241,7 @@ header.navcolor {
 .nav-block ul .nav-block-item .nav-link:hover::after{
     transform: scale(1);
 }
-/*-----------------------------------NavBar-End---------------------------*/
+/*-----------------------------------NavBar-End------------------------------------------------------------------*/
 
 /*......Media Query Set Up...Starts......*/
 @media(min-width:1016px){
@@ -484,6 +484,10 @@ header.navcolor {
     .sidebar{
         width: 300px;
     }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
+    }
 }
 @media(max-width:480px){
     .logo{
@@ -494,7 +498,7 @@ header.navcolor {
         width: 280px;
     }
     #skills-progress-bar{
-        margin: 30px;
+        margin: 40px 15px;
         border: 10px solid #fff;
     }
 }
@@ -505,6 +509,10 @@ header.navcolor {
     }
     .sidebar{
         width: 270px;
+    }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
     }
 }
 @media(max-width:355px){
@@ -519,6 +527,10 @@ header.navcolor {
         font-size: 16px;
         font-weight: 700;
     }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
+    }
 }
 @media(max-width:330px){
     .logo{
@@ -527,6 +539,10 @@ header.navcolor {
     }
     .sidebar{
         width: 250px;
+    }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
     }
 }
 @media(max-width:250px){
@@ -537,6 +553,10 @@ header.navcolor {
     .sidebar{
         width: 230px;
     }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
+    }
 }
 @media(max-width:228px){
     .logo{
@@ -545,6 +565,10 @@ header.navcolor {
     }
     .sidebar{
         width: 200px;
+    }
+    #skills-progress-bar{
+        margin: 40px 15px;
+        border: 10px solid #fff;
     }
 }
 /*......Media Query Set Up...ends......*/
@@ -559,7 +583,7 @@ header.navcolor {
     background:#222222f6;
 }
 
-/*.............................Home Section.............................*/
+/*.............................Home Section.................................................................*/
 .home{
     position: absolute;
     color: #fff;
@@ -670,8 +694,9 @@ header.navcolor {
     color: #11b9be;
     text-decoration: none;
 }
+/*................................About Section..END............................................................*/
 
-/*................................Skills Section...................................*/
+/*................................Skills Section..............................................................*/
 #Skills{
     overflow: auto;
     padding: 74px 0px;
@@ -680,34 +705,74 @@ header.navcolor {
     background: rgb(4,22,46);
     background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
+#Skills .my-progress-tag{
+    float: left;
+    margin-left: 10px;
+}
+#Skills .progress-bar{
+    background-color: #314766;
+}
 #skills-progress-bar{
 	background: url('../images/skills-bg.jpg') no-repeat 0px 0px;
     background-size: cover;
     background-attachment: fixed;
-    margin: 40px;
+    margin: 40px 0 0 0;
     border: 10px solid #fff;
 }
 #skills-progress-bar .col-6 {
     text-align: center;
 }
+#Skills .skills-popup{
+   text-decoration: none; 
+   width: 50px;
+   height: 25px;
+   border: 1px solid #fff;
+   color: #fff;
+   font-size: 20px;
+   padding: 10px;
+   box-shadow: 5px 5px 1px 1px #fff;
+}
+/*................................Skills Section.End.............................................................*/
+/*----------------------pop-up---------------------------------------------------------------------------------*/
 .mfp-close-btn-in .mfp-close {
     color: #ffffff;
 }
 button.mfp-close, button.mfp-arrow {
-    overflow: visible;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    -webkit-appearance: none;
-    display: block;
-    outline: none;
-    padding: 0;
-    z-index: 1046;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     font-size: 60px;
 }
-/*..................................cretificates Section.............................*/
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+/*----------------------pop-up-end-----------------------------------------------------------------------------*/
+/*..................................cretificates Section..........................................................*/
 #Certificates{
     overflow: auto;
     padding: 73px 0px;
@@ -716,8 +781,8 @@ button.mfp-close, button.mfp-arrow {
     background: rgb(4,22,46);
     background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
-
-/*.................................Projects Section............................*/
+/*..................................cretificates Section.End..........................................................*/
+/*.................................Projects Section...................................................................*/
 #Projects{
     overflow: auto;
     padding: 74px 0px;
