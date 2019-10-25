@@ -982,37 +982,34 @@ button.mfp-close, button.mfp-arrow {
     background: rgb(4,22,46);
     background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
-#Education .container .row div{
-    width:40%;
-    height:360px;
+#Education .container .row .carousel{
+    width:100%;
+    height:450px;
     margin:20px 0;
 }
 #Education .container .row div img{
-    width:80%;
-    height: 70%;
-    opacity: 0.7;
-    border-top:3px solid #fff;
-    transition: 0.7s;
+    width:100%;
+    height: 90%;
 }
-#Education .container .row div img:hover{
-    opacity: 1;
-    transform: scale(1.1);
+#Education .edu-des{
+    width: 100%;
+    height: 100px !important;
+    margin: 10px 0;
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 2; 
 }
-#Education .container .row div h4{
-    margin-top: 5%;
-    margin-bottom: 0%;
-    font-family: 'Black Ops One', cursive;
+.verticle{
+    transform: rotate(120deg);
+    height: 5px;
+    width: 50%;
+    background: #fff;
+    z-index: 1;
 }
-#Education .container .row div p{
-    margin-bottom: 0%;
-    color: rgba(255, 251, 251, 0.603);
-}
-#Education .container .row div h5{
-    line-height: 1;
-    font-weight: 400;
-    color: rgba(255, 251, 251, 0.767);
-}
-
 /*.....................................Contact Section................................*/
 #Contact{
     overflow: auto;
@@ -1121,10 +1118,10 @@ button.mfp-close, button.mfp-arrow {
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     /* some CSS here */
     .particles-js-canvas-el{
-        height: 80% !important;
+        height: 90% !important;
     }
     .parallax1 {
-        min-height: 80% !important;
+        min-height: 90% !important;
     }
     #About .bio{
         font-size: 15px;
@@ -1136,6 +1133,12 @@ button.mfp-close, button.mfp-arrow {
     }
     .my-title{
         font-size: 20px;
+    }
+    #Education .edu-des{
+        margin: 10px 10px;
+    }
+    #Education .container .row .carousel{
+        height: 350px;
     }
   }
   
@@ -1151,6 +1154,12 @@ button.mfp-close, button.mfp-arrow {
     }
     .my-title{
         font-size: 25px;
+    }
+    #Education .edu-des{
+        margin: 10px 10px;
+    }
+    #Education .container .row .carousel{
+        height: 350px;
     }
   }
   
