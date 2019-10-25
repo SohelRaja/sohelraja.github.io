@@ -78,4 +78,15 @@ $(document).ready(function() {
 		removalDelay: 400,
 		mainClass:'mfp-fade'
 	});
+	$('.projects-popup').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 400,
+		mainClass:'mfp-fade'
+	});
 });

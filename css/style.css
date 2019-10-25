@@ -656,6 +656,9 @@ header.navcolor {
     transition: all 1s ease;
     transform: scale(1);
 }
+#About .bio{
+    text-align: left;
+}
 #About .bio-skills h5:hover{
     text-shadow: 0 0 10 #222222;
     color: #fff;
@@ -723,14 +726,19 @@ header.navcolor {
     text-align: center;
 }
 #Skills .skills-popup{
-   text-decoration: none; 
-   width: 50px;
-   height: 25px;
-   border: 1px solid #fff;
-   color: #fff;
-   font-size: 20px;
-   padding: 10px;
-   box-shadow: 5px 5px 1px 1px #fff;
+    text-decoration: none; 
+    width: 50px;
+    height: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 1px 1px #fff;
+    background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%);
+    transition: all 0.5s ease-in;
+}
+#Skills .skills-popup:hover{
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
 /*................................Skills Section.End.............................................................*/
 /*----------------------pop-up---------------------------------------------------------------------------------*/
@@ -787,12 +795,49 @@ button.mfp-close, button.mfp-arrow {
     overflow: auto;
     padding: 74px 0px;
     color: #fff;
-    position: relative;
+    /*position: relative;
     background: url('../images/project-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+}
+#Projects .card{
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    box-shadow: 0 1px 3px #fff;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+#Projects .card:hover{
+    background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%);
+    box-shadow: 2px 2px 5px #fff;
+}
+#Projects .card img{
+    width: 100%;
+    height: 180px;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+}
+#Projects .card:hover img{
+    transform: scale(1.1);
+}
+#Projects .projects-popup{
+    text-decoration: none; 
+    width: 50px;
+    height: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 1px 1px #fff;
+    background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%);
+    transition: all 0.5s ease-in;
+}
+#Projects .projects-popup:hover{
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
 }
 #Projects .btn{
     background: #0b2f5e;
@@ -801,6 +846,94 @@ button.mfp-close, button.mfp-arrow {
 #Projects .btn:hover{
     background: #031329;
     color:#fff;
+}
+#projects-section{
+	background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    margin: 40px 0 0 0;
+    border: 10px solid #fff;
+    padding: 10px;
+}
+#projects-section .card{
+    margin: 10px 0;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+#projects-section .card:hover{
+    box-shadow: 2px 2px 5px #fff;
+    transform: scale(1.025);
+}
+#projects-section .card img{
+    width: 100%;
+    height: 150px;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+}
+#projects-section .card:hover img{
+    transform: scale(1.1);
+}
+#projects-section .card a span{
+    border: 1px solid #000;
+    box-shadow: 3px 3px 1px #000;
+}
+#projects-section .card a span i{
+    color: #000;
+}
+.project-tag-1{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 35px;
+    margin-left: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 1px #fff; 
+}
+.project-tag-1 i{
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    font-size: 30px;
+    color: #fff;
+    transform: scale(1);
+    transition: all 0.4s ease-in;
+}
+.project-tag-1:hover{
+    cursor: pointer;
+}
+.project-tag-1:hover i{
+    transform: scale(1.3);
+}
+.project-tag-2{
+    position: relative;
+    float: right;
+    width: 70px;
+    height: 35px;
+    margin-right: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 40px;
+    box-shadow: 3px 3px 1px #fff; 
+}
+.project-tag-2 i{
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    font-size: 30px;
+    color: #fff;
+    transform: scale(1);
+    transition: all 0.4s ease-in;
+}
+.project-tag-2:hover{
+    cursor: pointer;
+}
+.project-tag-2:hover i{
+    transform: scale(1.3);
 }
 /*Pop Up Setup*/
 .popup{
@@ -983,3 +1116,68 @@ button.mfp-close, button.mfp-arrow {
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+/*********************************Media Query ***************************************************/
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    /* some CSS here */
+    .particles-js-canvas-el{
+        height: 80% !important;
+    }
+    .parallax1 {
+        min-height: 80% !important;
+    }
+    #About .bio{
+        font-size: 15px;
+        letter-spacing: .25px;
+        margin: 0;
+    }
+    #About .bio-skills h5{
+        font-size: 15px;
+    }
+    .my-title{
+        font-size: 20px;
+    }
+  }
+  
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+    /* some CSS here */
+    #About .bio{
+        font-size: 16px;
+        margin: 0;
+    }
+    #About .bio-skills h5{
+        font-size: 23px;
+    }
+    .my-title{
+        font-size: 25px;
+    }
+  }
+  
+  /* #### Mobile Phones Portrait or Landscape #### */
+  @media screen and (max-device-width: 640px){
+    /* some CSS here */
+  }
+  
+  /* #### Tablets Portrait or Landscape #### */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    /* some CSS here */
+    #About .bio{
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-left-color: #11b9be;
+        padding-left: 20px;
+    }
+  }
+  
+  /* #### Desktops #### */
+  @media screen and (min-width: 1024px){
+    /* some CSS here */
+    #About .bio{
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-left-color: #11b9be;
+        padding-left: 20px;
+    }
+  }
+  /******************************************Media Query End*********************************************/
