@@ -1006,7 +1006,7 @@ button.mfp-close, button.mfp-arrow {
 .verticle{
     transform: rotate(120deg);
     height: 5px;
-    width: 50%;
+    width: 45%;
     background: #fff;
     z-index: 1;
 }
@@ -1021,29 +1021,48 @@ button.mfp-close, button.mfp-arrow {
 }
 #Contact iframe{
     width:100%;
-    height:320px;
+    height:400px;
     margin-bottom: 20px;
-}
+} 
+.just{}
 #Contact .address{
     width: 100%;
-    height: 90px;
-    margin: 0 0 20 0;
+    height: 95px;
+    padding: 10px 0;
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 0 0 20px 0;
+    z-index: 3;
 }
 #Contact .phone{
     width: 100%;
-    height: 90px;
-    margin: 0 0 20 0;
+    height: 95px;
+    padding: 10px 0;
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 0 0 20px 0;
+    z-index: 3;
 }
 #Contact .email{
     width: 100%;
-    height: 90px;
+    height: 95px;
+    padding: 10px 0;
+    background: rgb(4,22,46);
+    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
+    color: #fff;
+    border: 3px solid #fff;
     margin: 0;
+    z-index: 3;
 }
 #Contact .info-logo{
     margin: auto;
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     border-radius: 50%;
     background:#7be7eb;
@@ -1060,7 +1079,7 @@ button.mfp-close, button.mfp-arrow {
     bottom: 0;
     left:0;
     color: #0b2f5e;
-    line-height: 70px;
+    line-height: 50px;
     transform: scale(1);
     transition: all 0.7s;
 }
@@ -1068,7 +1087,13 @@ button.mfp-close, button.mfp-arrow {
     color: #fff;
     transform: scale(2);
 }
-
+.verticle-2{
+    transform: rotate(-120deg);
+    height: 5px;
+    width: 45%;
+    background: #fff;
+    z-index: 1;
+}
 /*....................................Footer section................................*/
 .footer{
     padding: 30px;
@@ -1140,6 +1165,18 @@ button.mfp-close, button.mfp-arrow {
     #Education .container .row .carousel{
         height: 350px;
     }
+    #Contact .address{
+        margin: 0 10px 20px 10px;
+    }
+    #Contact .phone{
+        margin: 0 10px 20px 10px;
+    }
+    #Contact .email{
+        margin: 0 10px 0 10px;
+    }
+    footer{
+        font-size: 15px;
+    }
   }
   
   /* #### Mobile Phones Landscape #### */
@@ -1160,6 +1197,15 @@ button.mfp-close, button.mfp-arrow {
     }
     #Education .container .row .carousel{
         height: 350px;
+    }
+    #Contact .address{
+        margin: 0 10px 20px 10px;
+    }
+    #Contact .phone{
+        margin: 0 10px 20px 10px;
+    }
+    #Contact .email{
+        margin: 0 10px 0 10px;
     }
   }
   
