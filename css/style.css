@@ -1206,6 +1206,16 @@ button.mfp-close, button.mfp-arrow {
     #Contact .email{
         margin: 0 10px 0 10px;
     }
+    #Projects .mobile-pro{
+        max-width: 80%;
+        margin: 0 10%;
+    }
+    #projects-section .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 80%;
+        margin: 0 10%;
+    }
   }
   
   /* #### Mobile Phones Portrait or Landscape #### */
