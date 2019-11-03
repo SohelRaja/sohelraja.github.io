@@ -1181,6 +1181,12 @@ button.mfp-close, button.mfp-arrow {
   /* #### Mobile Phones Landscape #### */
   @media screen and (max-device-width: 640px) and (orientation: landscape){
     /* some CSS here */
+    .particles-js-canvas-el{
+        height: 105% !important;
+    }
+    .parallax1 {
+        min-height: 105% !important;
+    }
     #About .bio{
         font-size: 16px;
         margin: 0;
