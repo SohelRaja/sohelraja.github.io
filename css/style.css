@@ -159,7 +159,8 @@ header{
 	width: 100%;
 	margin: 0;
     padding: 0;
-    font-family: 'Bungee Inline', cursive;
+    /* font-family: 'Bungee Inline', cursive; */
+    font-family: 'Orbitron', sans-serif;
 	background: none;/*Nav Bar background color*/
 	box-sizing: border-box;
     z-index: 1;
@@ -213,12 +214,12 @@ header.navcolor {
     transform: scale(1);
 }
 .nav-block ul .nav-block-item .nav-link:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     color: #7be7eb;
 }
 /*Scrolling effect activation...starts*/
 .nav-block ul .nav-block-item .nav-link.active{
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: #7be7eb;
     font-weight: 400;
 }
@@ -471,6 +472,29 @@ header.navcolor {
     .sidebar .side-block ul .side-block-item .nav-link:hover::after{
         transform: scale(1);
     }
+    /* Sidebar Resume Link */
+    .resume-link{
+        background-color: #24296865 !important;
+        color: white;
+        margin: 0 auto;
+        width: 85%;
+        border: 1px solid rgba(160, 158, 158, 0.404);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        opacity: .7;
+        cursor: pointer;
+    }
+    .sidebar .side-block ul .side-block-item .resume-link:hover{
+        background-color: #24296865 !important;
+        color: white;
+        opacity: .9;
+        transform: scale(1);
+    }
+    .sidebar .side-block ul .side-block-item .resume-link:hover::after{
+        transform: scale(0) !important;
+    }
 }
 @media(max-width:828px){
     .logo{
@@ -671,7 +695,7 @@ header.navcolor {
 #about ul li{
     margin: 5px 10px;
     list-style: none;
-    background-color:#0b878b;
+    background-color:#5191c5;
     border-radius: 50%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -694,7 +718,11 @@ header.navcolor {
     transform: scale(1.1);
 }
 #About ul li a{
-    color: #11b9be;
+    color: #5191c5;
+    text-decoration: none;
+}
+#About ul li .resume-link-about{
+    color: #e5e9e9;
     text-decoration: none;
 }
 /*................................About Section..END............................................................*/
