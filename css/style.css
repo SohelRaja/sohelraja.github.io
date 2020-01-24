@@ -48,9 +48,9 @@ section::-webkit-scrollbar{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #DAA520 !important;
     margin: 0 10px;
-    border: 1px solid #fff;
+    border: 1px solid #FFD700;
     border-radius: 50%;
     animation: jumping_ball 1s linear infinite;
 }
@@ -119,7 +119,8 @@ section::-webkit-scrollbar{
 }
 #preloader .jumping-letter li{
     list-style: none;
-    background: #0c0c0c; /*Letter Background Color*/
+    background: var(--theme-dark) !important; /*Letter Background Color*/
+    color: #DAA520 !important;
     margin: 0 10px;
     animation: jumping_letter 1s linear infinite;
 }
@@ -373,9 +374,9 @@ header.navcolor {
 		right: 0;
 		width: 23px;
 		height: 3px;
-		background: #fff;
+		background: var(--theme-dark);
 		transition: .5s;
-		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+		box-shadow: 1px 2px 1px var(--theme-dark);
 	}
 	.menu-toggle span:before{
 		content: '';
@@ -384,9 +385,9 @@ header.navcolor {
 		left: 0;
 		width: 30px;
 		height: 3px;
-		background: #fff;
+		background: var(--theme-dark);
 		transition: .6s;
-		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+		box-shadow: 1px 2px 1px var(--theme-dark);
 	}
 	.menu-toggle span:after{
 		content: '';
@@ -395,9 +396,9 @@ header.navcolor {
 		left: 0;
 		width: 30px;
 		height: 3px;
-		background: #fff;
+		background: var(--theme-dark);
 		transition: .6s;
-		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+		box-shadow: 1px 2px 1px var(--theme-dark);
 	}
 	.menu-toggle.active span{
 		background: transparent;
@@ -407,13 +408,13 @@ header.navcolor {
 		top: 0;
 		transform: rotate(45deg);
 		width: 30px;
-		box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+		box-shadow: 1px 2px 1px var(--theme-dark);
 	}
 	.menu-toggle.active span:after{
         top: 0;
         width: 30px;
 		transform: rotate(-45deg);
-		box-shadow: 1px 1px 2px rgba(0,0,0,1);
+		box-shadow: 1px 1px 2px var(--theme-dark);
 	}
     /*Menu-Toggler....END*/
 
@@ -441,7 +442,7 @@ header.navcolor {
         color:#0077b5;
     }
     .sidebar .nav-social ul li a:hover{
-        color: #fff;
+        color: var(--theme-dark);
     }
     .sidebar .nav-social.active {
 	display: inline-block;
@@ -801,19 +802,19 @@ header.navcolor {
     text-decoration: none; 
     width: 50px;
     height: 25px;
-    border: 1px solid var(--theme-cool);
-    color: var(--theme-light);
     font-size: 20px;
     padding: 10px;
-    box-shadow: 5px 5px 1px 1px var(--theme-cool);
+    border: 1px solid var(--theme-dark);
+    color: var(--theme-dark);
+    box-shadow: 5px 5px 1px 1px var(--theme-dark);
+    background: var(--theme-light);
     /* background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%); */
-    background: var(--theme-dark);
     transition: all 0.5s ease-in;
 }
 #Skills .skills-popup:hover{
     /* background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
-    box-shadow: 5px 5px 1px 1px var(--theme-dark);
+    box-shadow: 5px 5px 1px 1px var(--theme-cool);
     color: var(--theme-dark);
 }
 /*................................Skills Section.End.............................................................*/
@@ -914,19 +915,19 @@ button.mfp-close, button.mfp-arrow {
     width: 50px;
     height: 25px;
     border: 1px solid var(--theme-dark);
-    color: var(--theme-light);
+    color: var(--theme-dark);
     font-size: 15px;
     padding: 10px;
-    box-shadow: 5px 5px 1px 1px var(--theme-cool);
+    box-shadow: 5px 5px 1px 1px var(--theme-dark);
     /* background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%); */
-    background: var(--theme-dark);
+    background: var(--theme-light);
     transition: all 0.5s ease-in;
 }
 #Projects .projects-popup:hover{
     /* background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
     color: var(--theme-dark);
-    box-shadow: 5px 5px 1px 1px var(--theme-dark);
+    box-shadow: 5px 5px 1px 1px var(--theme-cool);
 }
 #Projects .btn{
     background: var(--theme-dark);
