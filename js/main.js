@@ -3,6 +3,16 @@ var myToggle = document.querySelector(".menu-toggle");
 var mySidebar = document.querySelector(".sidebar");
 var blurSection = document.querySelector("#blurSection");
 var social = document.querySelector(".nav-social");
+var modeButton = document.querySelector(".logo");
+var root = document.querySelector(":root");
+
+
+modeButton.addEventListener('click',_=>{
+	//var style = getComputedStyle(document.body);
+	root.style.getPropertyValue('--theme-light')=="#fff" ? modeButton.innerHTML="&lt;Light Mode/&gt;" : modeButton.innerHTML="&lt;Dark Mode/&gt;";
+	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-light','#202020'):root.style.setProperty('--theme-light','#fff');
+	root.style.getPropertyValue('--theme-dark')=="#202020" ? root.style.setProperty('--theme-dark','#fff'):root.style.setProperty('--theme-dark','#202020');
+});
 
 //To Open the Sidebar
 function menuToggle(){
@@ -34,10 +44,12 @@ function preloader(){
 /*..............................On Scroll Navbar.................................*/
 //navbar scrolling effects
 $(window).on("scroll",function(){
-	if($(window).scrollTop() > 200){
+	if($(window).scrollTop() > 0){ //200
 		$('header').addClass('navcolor');
+		$('.logo').addClass('logocolor');
 	}else{
 		$('header').removeClass('navcolor');
+		$('.logo').removeClass('logocolor');
 	}
 });
 /*..............................skills progress bar........................ */
@@ -51,20 +63,20 @@ $(function(){
     $('.scrolling').scrollWatchMapTo('nav ul li a');
 });
 /*............................Project Pop Up.............................*/ 
-$("#project-more").click(function(){
-	$(".popup").fadeIn(200,function(){
-		$(this).addClass("visibility-popup");
-		$("#project-more").delay(3000).queue(function(){
-			var url="https://github.com/SohelRaja?tab=repositories";
-			$(location).prop("href",url);
-		});
-	});
-});
-$(".popupclose").click(function(){
-	$(".popup").fadeOut(200,function(){
-		$(this).removeClass("visibility-popup");
-	});
-});           
+// $("#project-more").click(function(){
+// 	$(".popup").fadeIn(200,function(){
+// 		$(this).addClass("visibility-popup");
+// 		$("#project-more").delay(3000).queue(function(){
+// 			var url="https://github.com/SohelRaja?tab=repositories";
+// 			$(location).prop("href",url);
+// 		});
+// 	});
+// });
+// $(".popupclose").click(function(){
+// 	$(".popup").fadeOut(200,function(){
+// 		$(this).removeClass("visibility-popup");
+// 	});
+// });           
 /*------------Skills Pop-up----------------------- */
 $(document).ready(function() {
 	$('.skills-popup').magnificPopup({
