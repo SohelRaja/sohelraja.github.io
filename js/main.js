@@ -10,8 +10,10 @@ var root = document.querySelector(":root");
 modeButton.addEventListener('click',_=>{
 	//var style = getComputedStyle(document.body);
 	root.style.getPropertyValue('--theme-light')=="#fff" ? modeButton.innerHTML="&lt;Light Mode/&gt;" : modeButton.innerHTML="&lt;Dark Mode/&gt;";
-	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-light','#202020'):root.style.setProperty('--theme-light','#fff');
-	root.style.getPropertyValue('--theme-dark')=="#202020" ? root.style.setProperty('--theme-dark','#fff'):root.style.setProperty('--theme-dark','#202020');
+	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-light','#333333'):root.style.setProperty('--theme-light','#fff');
+	root.style.getPropertyValue('--theme-dark')=="#333333" ? root.style.setProperty('--theme-dark','#fff'):root.style.setProperty('--theme-dark','#333333');
+	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-color','#424242'):root.style.setProperty('--theme-color','#BAB9B9');
+
 });
 
 //To Open the Sidebar
