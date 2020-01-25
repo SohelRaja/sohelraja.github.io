@@ -1,3 +1,5 @@
 # sohelraja.github.io
-This Is My Portfolio WebSite. :)
-I work on it to make better. I will add new features to it in near future. 
+
+This is my Portfolio webSite. It is fully responsive for all devices. It has Dark and Light Mode both. :)
+
+[Link](https://sohelraja.github.io)  
