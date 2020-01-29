@@ -878,18 +878,9 @@ button.mfp-close, button.mfp-arrow {
     overflow: auto;
     padding: 74px 0px;
     color: var(--theme-color);
-    /*position: relative;
-    background: url('../images/project-bg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-    /* background: rgb(4,22,46);
-    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
 }
-#Projects .card{
-    /* background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
+/* #Projects .card{
     background: var(--theme-light);
     color: var(--theme-color);
     box-shadow: 0 1px 3px var(--theme-dark);
@@ -898,7 +889,6 @@ button.mfp-close, button.mfp-arrow {
     transition: all 0.6s ease;
 }
 #Projects .card:hover{
-    /* background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%); */
     background: var(--theme-light);
     box-shadow: 2px 2px 5px var(--theme-dark);
 }
@@ -910,6 +900,36 @@ button.mfp-close, button.mfp-arrow {
 }
 #Projects .card:hover img{
     transform: scale(1.1);
+} */
+#Projects .project-template{
+    margin: 0px auto;
+    padding: 20px 5px;
+    width: 100%;
+    background: var(--theme-light);
+    color: var(--theme-color);
+    border: 3px solid var(--theme-cool);
+    z-index: 3;
+}
+#Projects .project-template .link{
+    color: var(--theme-dark);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid var(--theme-dark);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--theme-dark);
+    padding: 5px;
+}
+#Projects .tag{
+    display: inline;
+    box-sizing: border-box;
+    padding: 1.5px 10px;
+    margin: inherit;
+    border: 1px double var(--theme-light);
+    background-color: var(--theme-dark);
+    color: var(--theme-light);
+    font-weight: 600;
+    border-radius: 10px;
 }
 #Projects .projects-popup{
     text-decoration: none; 
@@ -1361,6 +1381,9 @@ button.mfp-close, button.mfp-arrow {
         border-left-style: solid;
         border-left-color: var(--theme-dark);
         padding-left: 20px;
+    }
+    #Projects .project-template{
+        width: 80%;
     }
   }
   /******************************************Media Query End*********************************************/
