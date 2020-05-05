@@ -87,7 +87,7 @@ $(document).ready(function() {
 		var preloader = $('#preloader');
 		preloader.fadeOut(preloaderFadeOutTime);
 	}
-	setTimeout(hidePreloader,2000);
+	setTimeout(hidePreloader,1500);
 	
 	$('.skills-popup').magnificPopup({
 		type: 'inline',

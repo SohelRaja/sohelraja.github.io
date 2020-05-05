@@ -722,7 +722,7 @@ header.navcolor {
     background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
 }
-#About .bio-skills h5{
+#About .bio-skills h6{
     font-weight: 700;
     color: var(--theme-color);
     font-family: 'Black Ops One', cursive;
