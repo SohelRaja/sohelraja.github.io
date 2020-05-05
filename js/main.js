@@ -38,11 +38,11 @@ $(document).click(function(e) {
 });
 /*.....................preloader................................*/
 //Loader termination function
-function preloader(){
-	var preload = document.querySelector("#preloader");
-	preload.style.display = 'none';
-	preload.style.opacity = 0;
-}
+// function preloader(){
+// 	var preload = document.querySelector("#preloader");
+// 	preload.style.display = 'none';
+// 	preload.style.opacity = 0;
+// }
 /*..............................On Scroll Navbar.................................*/
 //navbar scrolling effects
 $(window).on("scroll",function(){
@@ -81,6 +81,14 @@ $(function(){
 // });           
 /*------------Skills Pop-up----------------------- */
 $(document).ready(function() {
+	//Preloader
+	preloaderFadeOutTime = 1000;
+	function hidePreloader() {
+		var preloader = $('#preloader');
+		preloader.fadeOut(preloaderFadeOutTime);
+	}
+	setTimeout(hidePreloader,2000);
+	
 	$('.skills-popup').magnificPopup({
 		type: 'inline',
 		fixedContentPos: false,
