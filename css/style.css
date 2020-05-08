@@ -45,146 +45,6 @@ section::-webkit-scrollbar{
     width: 12rem;
 }
 
-/* #preloader .jumping-ball{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-}
-#preloader .jumping-ball li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #DAA520 !important;
-    margin: 0 10px;
-    border: 1px solid #FFD700;
-    border-radius: 50%;
-    animation: jumping_ball 1s linear infinite;
-}
-#preloader .jumping-ball li:nth-child(1){
-    animation-delay: 0.1s;
-    animation-duration: 0.75s;
-    background-color: violet;
-}
-#preloader .jumping-ball li:nth-child(2){
-    animation-delay: .2s;
-    animation-duration: 0.75s;
-    background-color: indigo;
-}
-#preloader .jumping-ball li:nth-child(3){
-    animation-delay: .4s;
-    animation-duration: 0.75s;
-    background-color: blue;
-}
-#preloader .jumping-ball li:nth-child(4){
-    animation-delay: .5s;
-    animation-duration: 0.75s;
-    background-color: green;
-}
-#preloader .jumping-ball li:nth-child(5){
-    animation-delay: .6s;
-    animation-duration: 0.75s;
-    background-color: yellow;
-}
-#preloader .jumping-ball li:nth-child(6){
-    animation-delay: .68s;
-    animation-duration: 0.75s;
-    background-color: orange;
-}
-#preloader .jumping-ball li:nth-child(7){
-    animation-delay: .8s;
-    animation-duration: 0.75s;
-    background-color: red;
-}
-@keyframes jumping_ball{
-    0%{
-        transform: translateY(0);
-    }
-    35%
-    {
-        transform: translateY(-50px);
-    }
-    60%
-    {
-        transform: translateY(-60px);
-    }
-    100%
-    {
-        transform: translateY(0);
-    }
-}
-#preloader .jumping-letter{
-    position: absolute;
-    top: 48.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    border-bottom: 0px;
-    font-size: 20px;
-    font-weight: bold;
-}
-#preloader .jumping-letter li{
-    list-style: none;
-    background: var(--theme-dark) !important; 
-    color: #DAA520 !important;
-    margin: 0 10px;
-    animation: jumping_letter 1s linear infinite;
-}
-#preloader .jumping-letter li:nth-child(1){
-    animation-delay: 0s;
-    animation-duration: 0.8s;
-    color: violet;
-}
-#preloader .jumping-letter li:nth-child(2){
-    animation-delay: .2s;
-    animation-duration: 0.8s;
-    color: indigo;
-}
-#preloader .jumping-letter li:nth-child(3){
-    animation-delay: .4s;
-    animation-duration: 0.8s;
-    color: blue;
-}
-#preloader .jumping-letter li:nth-child(4){
-    animation-delay: .5s;
-    animation-duration: 0.8s;
-    color: green;
-}
-#preloader .jumping-letter li:nth-child(5){
-    animation-delay: .6s;
-    animation-duration: 0.8s;
-    color: yellow;
-}
-#preloader .jumping-letter li:nth-child(6){
-    animation-delay: .68s;
-    animation-duration: 0.8s;
-    color: orange;
-}
-#preloader .jumping-letter li:nth-child(7){
-    animation-delay: .8s;
-    animation-duration: 0.8s;
-    color: red;
-}
-@keyframes jumping_letter{
-    0%{
-        transform: translateY(0);
-    }
-    35%
-    {
-        transform: translateY(10px);
-    }
-    60%
-    {
-        transform: translateY(15px);
-    }
-    100%
-    {
-        transform: translateY(0);
-    }
-} */
-
 /*-------------------------------NavBar-------------------------------------------------------------------------*/
 header{
 	position: fixed;
@@ -202,10 +62,6 @@ header{
 	transition: 1s;
 }
 header.navcolor {
-    /*Nav Bar background color*/
-    /* background: rgb(4,22,46);
-    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%);
-    box-shadow: 0 1px 3px #fff; */
     background: var(--theme-light) !important;
     color: var(--theme-dark) !important;
 }
@@ -227,6 +83,11 @@ header.navcolor {
 .logo:hover{
     text-decoration: none;
     color:var(--theme-dark);
+}
+.logo i{
+    font-size: 30px;
+    position: absolute;
+    top: 1.28rem;
 }
 .nav-block{
 	float: right;
@@ -542,7 +403,7 @@ header.navcolor {
 }
 @media(max-width:828px){
     .logo{
-        padding:0 36%;
+        padding:0 12%;
     }
 }
 @media(max-width:550px){
@@ -560,7 +421,7 @@ header.navcolor {
 @media(max-width:480px){
     .logo{
         font-size: 24px;
-        padding:0 26%;
+        padding:0 10%;
     }
     .sidebar{
         width: 280px;
@@ -573,7 +434,7 @@ header.navcolor {
 @media(max-width:390px){
     .logo{
         font-size: 22px;
-        padding:0 24%;
+        padding:0 7%;
     }
     .sidebar{
         width: 270px;
@@ -586,7 +447,7 @@ header.navcolor {
 @media(max-width:355px){
     .logo{
         font-size: 20px;
-        padding:0 17%;
+        padding:0 5%;
     }
     .sidebar{
         width: 260px;
@@ -603,7 +464,7 @@ header.navcolor {
 @media(max-width:330px){
     .logo{
         font-size: 19px;
-        padding:0 5%;
+        padding:0 2%;
     }
     .sidebar{
         width: 250px;
@@ -616,7 +477,7 @@ header.navcolor {
 @media(max-width:250px){
     .logo{
         font-size: 23px;
-        padding:0 10%;
+        padding:0 2%;
     }
     .sidebar{
         width: 230px;
@@ -629,7 +490,7 @@ header.navcolor {
 @media(max-width:228px){
     .logo{
         font-size: 20px;
-        padding:0 5%;
+        padding:0 2%;
     }
     .sidebar{
         width: 200px;
@@ -784,8 +645,6 @@ header.navcolor {
     padding: 74px 0px;
     position: relative;
     color: var(--theme-color);
-    /* background: rgb(4,22,46);
-    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
 }
 #Skills .my-progress-tag{
@@ -801,7 +660,7 @@ header.navcolor {
     background-size: cover;
     background-attachment: fixed;
     margin: 40px 0 0 0;
-    border: 10px solid #fff;
+    border: 10px double #fff;
 }
 #skills-progress-bar .col-6 {
     text-align: center;
@@ -816,11 +675,9 @@ header.navcolor {
     color: var(--theme-dark);
     box-shadow: 5px 5px 1px 1px var(--theme-dark);
     background: var(--theme-light);
-    /* background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%); */
     transition: all 0.5s ease-in;
 }
 #Skills .skills-popup:hover{
-    /* background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
     background: var(--theme-light);
     box-shadow: 5px 5px 1px 1px var(--theme-cool);
     color: var(--theme-dark);
@@ -887,27 +744,7 @@ button.mfp-close, button.mfp-arrow {
     color: var(--theme-color);
     background: var(--theme-light);
 }
-/* #Projects .card{
-    background: var(--theme-light);
-    color: var(--theme-color);
-    box-shadow: 0 1px 3px var(--theme-dark);
-    margin: 10px 0;
-    overflow: hidden;
-    transition: all 0.6s ease;
-}
-#Projects .card:hover{
-    background: var(--theme-light);
-    box-shadow: 2px 2px 5px var(--theme-dark);
-}
-#Projects .card img{
-    width: 100%;
-    height: 180px;
-    transform: scale(1);
-    transition: all 0.5s ease-in;
-}
-#Projects .card:hover img{
-    transform: scale(1.1);
-} */
+
 #Projects .project-template{
     margin: 0px auto;
     padding: 20px 5px;
@@ -966,11 +803,9 @@ button.mfp-close, button.mfp-arrow {
     color:var(--theme-light);
 }
 #projects-section{
-	/* background: rgb(4,22,46);
-    background: linear-gradient(65deg, rgba(4,22,46,1) 0%, rgba(8,41,85,1) 28%, rgba(5,55,122,1) 50%, rgba(8,64,142,1) 72%, rgba(67,132,222,1) 100%); */
-    background: var(--theme-light);
+	background: var(--theme-light);
     margin: 40px 0 0 0;
-    border: 10px solid var(--theme-color);
+    border: 10px double var(--theme-dark);
     padding: 10px;
 }
 #projects-section .card{

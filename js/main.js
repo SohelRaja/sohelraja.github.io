@@ -3,18 +3,33 @@ var myToggle = document.querySelector(".menu-toggle");
 var mySidebar = document.querySelector(".sidebar");
 var blurSection = document.querySelector("#blurSection");
 var social = document.querySelector(".nav-social");
-var modeButton = document.querySelector(".logo");
-var root = document.querySelector(":root");
 
 
-modeButton.addEventListener('click',_=>{
-	//var style = getComputedStyle(document.body);
-	root.style.getPropertyValue('--theme-light')=="#fff" ? modeButton.innerHTML="&lt;Light Mode/&gt;" : modeButton.innerHTML="&lt;Dark Mode/&gt;";
-	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-light','#333333'):root.style.setProperty('--theme-light','#fff');
-	root.style.getPropertyValue('--theme-dark')=="#333333" ? root.style.setProperty('--theme-dark','#fff'):root.style.setProperty('--theme-dark','#333333');
-	root.style.getPropertyValue('--theme-light')=="#fff" ? root.style.setProperty('--theme-color','#424242'):root.style.setProperty('--theme-color','#BAB9B9');
+// Change Mode Option
+var LightMode = false;
+function modeChange(){
+	var root = document.querySelector(":root");
+	var modeButton = document.querySelector("#logo");
 
-});
+	var light = '#fff';
+	var dark = '#333333';
+	var color_light = '#424242';
+	var color_dark = '#BAB9B9';
+
+	if(LightMode){
+		root.style.setProperty('--theme-light',light);
+		root.style.setProperty('--theme-dark',dark);
+		root.style.setProperty('--theme-color',color_light);
+		modeButton.className="fa fa-moon-o";
+		LightMode = false;
+	}else{
+		root.style.setProperty('--theme-light',dark);
+		root.style.setProperty('--theme-dark',light);
+		root.style.setProperty('--theme-color',color_dark);
+		modeButton.className="fa fa-sun-o";
+		LightMode = true;
+	}
+}
 
 //To Open the Sidebar
 function menuToggle(){
