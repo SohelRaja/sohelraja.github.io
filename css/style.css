@@ -27,6 +27,14 @@ section::-webkit-scrollbar{
     --theme-dark: #333333;
     /* --theme-dark: #020202; */
 }
+/*--------------emoji tag-------------------------------*/
+.emoji-tag{
+    font-size: 20px;
+}
+.emoji-tag-s{
+    font-size: 15px;
+    font-weight: 600;
+}
 /*--------------------------------Preloader----------------------------*/
 #preloader{
     align-items: center;
@@ -208,6 +216,12 @@ header.navcolor {
     .logo{
         font-size: 28px;
         line-height: 72px;
+    }
+    .logo i{
+        font-size: 30px;
+        position: absolute;
+        top: 1.28rem;
+        left: 3rem;
     }
     .nav-block{
 		display: none;
@@ -519,16 +533,16 @@ header.navcolor {
     font-size: 500%;
     top: 25%;
     width: 100%;
-    font-family: 'Alex Brush', cursive;
+    /* font-family: 'Alex Brush', cursive; */
     letter-spacing: 8px;
     text-shadow: 0 0 10px #222222;
 }
 .home #heading-img{
     width:190px;
     height:190px;
-    border-radius:50%;
+    border-radius:7% 0 7% 0;
     border:3px solid var(--theme-cool);
-    box-shadow: 0 0 25px var(--theme-dark);
+    box-shadow: 0 0 12.5px var(--theme-dark);
     margin-bottom: 10px;
     opacity:1;
     transition: all 0.7s;
@@ -540,13 +554,11 @@ header.navcolor {
 }*/
 .home #heading-text{
     letter-spacing: 5px;
-    text-shadow: 3px 3px 5px var(--theme-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1.5px 1.5px 2.5px var(--theme-dark);
 }
 /*...Parallax Setup...*/
 .parallax1{
-    /*background: url('../images/home-bg2.jpg');*/
-    /* background: rgb(35,96,186);
-    background: radial-gradient(circle, rgba(35,96,186,1) 0%, rgba(29,98,195,1) 34%, rgba(7,23,45,1) 69%, rgba(1,8,17,1) 100%); */
     background: var(--theme-light);
     min-height: 100%;
     max-height: auto;
@@ -784,7 +796,6 @@ button.mfp-close, button.mfp-arrow {
     font-size: 15px;
     padding: 10px;
     box-shadow: 5px 5px 1px 1px var(--theme-dark);
-    /* background: linear-gradient(65deg, rgba(67,132,222,1) 0%, rgba(8,64,142,1) 28%, rgba(5,55,122,1) 50%, rgba(8,41,85,1) 72%, rgba(4,22,46,1) 100%); */
     background: var(--theme-light);
     transition: all 0.5s ease-in;
 }
@@ -801,6 +812,29 @@ button.mfp-close, button.mfp-arrow {
 #Projects .btn:hover{
     background: var(--theme-cool);
     color:var(--theme-light);
+}
+#Projects .github-button{
+    border: 1px solid var(--theme-dark);
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--theme-dark);
+    background: var(--theme-light);
+    box-shadow: 1px 1px 2px 1px var(--theme-dark);
+    transition: all 0.7s ease;
+    transform: scale(1);
+}
+#Projects .github-button:hover{
+    transform: scale(1.2);
+    background: var(--theme-dark);
+    color: var(--theme-light);
+    border-color: var(--theme-light);
+}
+#Projects .github-button i{
+    font-size: 25px;
 }
 #projects-section{
 	background: var(--theme-light);
@@ -964,6 +998,29 @@ button.mfp-close, button.mfp-arrow {
     text-align: center;
     z-index: 2; 
 }
+#Education .certificate-button{
+    border: 1px solid var(--theme-dark);
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--theme-dark);
+    background: var(--theme-light);
+    box-shadow: 1px 1px 2px 1px var(--theme-dark);
+    transition: all 0.7s ease;
+    transform: scale(1);
+}
+#Education .certificate-button:hover{
+    transform: scale(1.2);
+    background: var(--theme-dark);
+    color: var(--theme-light);
+    border-color: var(--theme-light);
+}
+#Education .certificate-button i{
+    font-size: 25px;
+}
 .verticle{
     transform: rotate(120deg);
     height: 5px;
@@ -1122,9 +1179,11 @@ button.mfp-close, button.mfp-arrow {
     .parallax1 {
         min-height: 90% !important;
     }
+    #About{
+        padding: 73px 7px !important;
+    }
     #About .bio{
-        font-size: 15px;
-        letter-spacing: .25px;
+        letter-spacing: .23px;
         margin: 0;
     }
     #About .bio-skills h5{
@@ -1161,6 +1220,9 @@ button.mfp-close, button.mfp-arrow {
     }
     .parallax1 {
         min-height: 105% !important;
+    }
+    #About{
+        padding: 73px 10px !important;
     }
     #About .bio{
         font-size: 16px;
@@ -1212,6 +1274,12 @@ button.mfp-close, button.mfp-arrow {
         border-left-style: solid;
         border-left-color: var(--theme-dark);
         padding-left: 20px;
+    }
+    .particles-js-canvas-el{
+        height: 65% !important;
+    }
+    .parallax1 {
+        min-height: 65% !important;
     }
   }
   
